@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khabar Ki Duniya</title>
+    <title>Kabar Ki Duniya</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/world-map-continents.png" type = "image/x-icon"/>
 
     <!----Font Awesom----->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,12 +15,13 @@
 <body>
     <header>
 
-        <!--   Logo    -->
+        <!------------Logo------------>
+        <div class="logo-img"><img src="https://img.icons8.com/color/48/000000/world-map-continents.png"/></div>
         <div class="logo">
             <h1 class="logo-text">Khabar Ki <span>Duniya</span></h1>
         </div>
-        <i class="fa fa-bars"></i>
-        <!--   Navigation bar   -->
+        <i class="menu-toggle"><img src="https://img.icons8.com/ios-filled/50/000000/squared-menu.png"/></i>
+        <!------------Navigation bar Start----------->
         <ul class="nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -27,11 +29,17 @@
             <!--------<li><a href="#">Sign Up</a></li>
             <li><a href="#">Login</a></li>----------->
             <li>
-                <a href="#">Faisal Agha</a>
+                <a href="#">
+                    <i><img src="https://img.icons8.com/pastel-glyph/22/000000/user-male--v1.png"/></i>
+                    Faisal Agha
+                    <i><img src="https://img.icons8.com/android/15/000000/double-down.png"/></i>
+                </a>
+            <!-----------Drop Down Menue start---------->
                 <ul>
-                    <li><a href="#"></a>Dashboard</li>
-                    <li><a href="#" class="logout"></a>Logout</li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="logout">Logout</a></li>
                 </ul>
+            <!-------------Drop Down Menue End------------>
             </li>
         </ul>
     </header>

@@ -1,16 +1,84 @@
+/************** For all the material present in box************/
+*{
+  box-sizing: border-box;
+}
 body{
-  /*  padding: 0px;
+    padding: 0px;
     margin: 0px;
-    background-image: linear-gradient(-90deg, rgb(89, 8, 92), rgb(69, 173, 221));
-    */
-background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2380F'/%3E%3Cstop offset='1' stop-color='%23f40'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+    background-color: #8d948d;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%238d948d' width='11' height='11'/%3E%3Crect fill='%238f968f' x='10' width='11' height='11'/%3E%3Crect fill='%23919791' y='10' width='11' height='11'/%3E%3Crect fill='%23929992' x='20' width='11' height='11'/%3E%3Crect fill='%23949b94' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23969d96' y='20' width='11' height='11'/%3E%3Crect fill='%23989e98' x='30' width='11' height='11'/%3E%3Crect fill='%239aa09a' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%239ca29c' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%239ea49e' y='30' width='11' height='11'/%3E%3Crect fill='%239fa59f' x='40' width='11' height='11'/%3E%3Crect fill='%23a1a7a1' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23a3a9a3' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23a5aba5' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23a7aca7' y='40' width='11' height='11'/%3E%3Crect fill='%23a9aea9' x='50' width='11' height='11'/%3E%3Crect fill='%23abb0ab' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23adb2ad' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23aeb3ae' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23b0b5b0' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23b2b7b2' y='50' width='11' height='11'/%3E%3Crect fill='%23b4b9b4' x='60' width='11' height='11'/%3E%3Crect fill='%23b6bbb6' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23b8bcb8' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23babeba' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23bcc0bc' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23bec2be' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23c0c4c0' x='70' width='11' height='11'/%3E%3Crect fill='%23c2c5c2' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23c4c7c3' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23c5c9c5' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23c7cbc7' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23c9cdc9' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23cbcfcb' x='80' width='11' height='11'/%3E%3Crect fill='%23cdd0cd' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23cfd2cf' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23d1d4d1' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23d3d6d3' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23d5d8d5' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23d7dad7' x='90' width='11' height='11'/%3E%3Crect fill='%23d9dbd9' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23dbdddb' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23dddfdd' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23dfe1df' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23e1e3e1' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23e3e5e3' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23e5e7e5' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23e7e8e7' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23e9eae9' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23ebeceb' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23edeeed' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23eff0ef' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23f1f2f1' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23f3f4f3' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23f5f6f5' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23f7f7f7' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23f9f9f9' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23fbfbfb' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23fdfdfd' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23ffffff' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-
+/*************** Header Customisation *****************/
+/*header *{
+  color: white;
+}*/
 header{
-    background-color: #008489;
+    background-color: #d0d1d3;
     height: 66px;
+    opacity: 80%;
+}
+header .logo {
+    float: left;
+    height: inherit;
+}
+.logo-img{
+  float: left;
+  margin-left: 1em;
+  border: red;
+  margin-top: 6px;
+}
+header .logo-text {
+  margin-top: 15px;
+}
+header .logo-text span{
+  color: white;
+}
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header ul li{
+  float: left;
+  position: relative;
+}
+/*****************Drop Down Menue Start************************/
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 100%;
+    display: none;
+}
+header ul li:hover ul{
+  display: block;
+}
+header ul li ul li{
+  width: 100%;
+}
+header ul li ul li a{
+  padding: 10px;
+}
+header ul li ul li a.logout{
+  color: red;
+}
+/*****************Drop Down Menue End************************/
+header ul li a{
+  display: block;
+  padding: 21px;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header ul li a:hover{
+  background: #939699 ;
+  transition: 0.5s;
+}
+header .menu-toggle{
+  display: none;
 }
